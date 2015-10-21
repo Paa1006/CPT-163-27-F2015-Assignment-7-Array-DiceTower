@@ -38,10 +38,10 @@ public class DnDDiceRoller {
   }
   
   public static int test_diceTowerWithTwoD6(){
-	List<Die> dice = new ArrayList();
+	ArrayList<Die> dice = new ArrayList();
 	dice.add(new Die(6));
 	dice.add(new Die(6));
-	DiceTower tower = DiceTower(dice);
+	DiceTower tower = new DiceTower(dice);
 	tower.dropDice();
 	int trayValue = tower.trayValue();
 	if(trayValue >= 2 && trayValue <= 12){
