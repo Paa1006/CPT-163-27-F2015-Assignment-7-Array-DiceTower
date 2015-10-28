@@ -28,9 +28,9 @@ public class DiceTower {
   }
   
   public void dropDice(){    
-      for(int i = 0; i < this.dice.size(); i++){
-          for(int sides = 0; sides < this.PANEL_COUNT; sides++){
-              this.dice[i].roll;
+      for(int sides = 0; sides < this.PANEL_COUNT; sides++){
+        for(Die droppedDie: this.dice){
+              droppedDie.roll();
           }
       }
   }

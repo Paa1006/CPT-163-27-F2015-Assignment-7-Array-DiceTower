@@ -31,6 +31,6 @@ public class Die {
      * Method to "roll" a die and set its value equal to a random number
      */
     public void roll(){
-        this.value = randomNumber.nextInt(this.sides) + 1;
+        this.value = this.randomNumber.nextInt(this.sides) + 1;
     }
 }
