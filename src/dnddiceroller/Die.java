@@ -12,8 +12,10 @@ import java.util.Random;
 public class Die {
     private int value;
     private int sides;
-    private Random randomNumber;
-    
+       
+   public Die(){
+       this.sides = 0;
+   }
     
     public Die(int sides){
         this.sides = sides;
@@ -31,6 +33,6 @@ public class Die {
      * Method to "roll" a die and set its value equal to a random number
      */
     public void roll(){
-        this.value = this.randomNumber.nextInt(this.sides) + 1;
+        this.value = (new Random()).nextInt(this.sides) +1;
     }
 }
